@@ -14,6 +14,7 @@ public class CreateEmployeeRequest {
     private String jobTitle;
     private String email;
     private Instant contractHireDate;
+    private Instant contractTerminationDate;
 
     public String getFirstName() {
         return firstName;
@@ -69,5 +70,13 @@ public class CreateEmployeeRequest {
 
     public void setContractHireDate(Instant contractHireDate) {
         this.contractHireDate = contractHireDate;
+    }
+
+    public Instant getContractTerminationDate() {
+        return contractTerminationDate;
+    }
+
+    public void setContractTerminationDate(Instant contractTerminationDate) {
+        this.contractTerminationDate = contractTerminationDate;
     }
 }
