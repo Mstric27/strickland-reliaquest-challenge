@@ -53,7 +53,7 @@ public class InMemoryEmployeeService implements EmployeeService {
         employee.setSalary(request.getSalary());
         employee.setJobTitle(request.getJobTitle());
         employee.setEmail(request.getEmail().trim());
-        employee.setContractTerminationDate(request.getContractTerminationDate())
+        employee.setContractTerminationDate(request.getContractTerminationDate());
         employee.setContractHireDate(
                 request.getContractHireDate() != null ? request.getContractHireDate() : Instant.now());
 
